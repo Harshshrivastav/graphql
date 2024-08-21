@@ -26,7 +26,7 @@ llm = ChatGroq(groq_api_key=groq_api_key, model_name="Gemma2-9b-It")
 chain = GraphCypherQAChain.from_llm(graph=graph, llm=llm, verbose=True)
 
 # Define the Streamlit app layout
-st.title("Movie Knowledge Graph")
+st.title("Chat-Mate...Filmography version")
 
 # Input field for the user's query
 user_query = st.text_input("Enter your question about movies:")
